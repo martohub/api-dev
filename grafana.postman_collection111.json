@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "3455a90b-ac17-4628-9924-33241ac20c61",
+		"name": "grafana",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "query api - id tags",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "2qwewasdD",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/search/?query=tom",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "tom"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query dashboard versions by id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "2qwewasdD",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/dashboards/id/:dashboardId/versions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"dashboards",
+						"id",
+						":dashboardId",
+						"versions"
+					],
+					"variable": [
+						{
+							"key": "dashboardId",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query dashboard parent versions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "2qwewasdD",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/dashboards/id/:dashboardId/versions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"dashboards",
+						"id",
+						":dashboardId",
+						"versions"
+					],
+					"variable": [
+						{
+							"key": "dashboardId",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query dashboard parent versions Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "2qwewasdD",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/dashboards/id/:dashboardId/versions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"dashboards",
+						"id",
+						":dashboardId",
+						"versions"
+					],
+					"variable": [
+						{
+							"key": "dashboardId",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "variables",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query version1 of dashboard ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "2qwewasdD",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{grafana_url}}/api/dashboards/id/13/versions/1",
+					"host": [
+						"{{grafana_url}}"
+					],
+					"path": [
+						"api",
+						"dashboards",
+						"id",
+						"13",
+						"versions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "2qwewasdD",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "0defc9a6-11c2-49aa-a267-7142187b47ee",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9febb05b-0b6c-4cf5-8d54-5e4c04143da8",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "b8089ead-24b9-4d59-9b16-25cd843eb6f8",
+			"key": "query",
+			"value": "tom",
+			"type": "string"
+		},
+		{
+			"id": "cd5f33bd-69c3-430f-afd7-18ea9bb07b7a",
+			"key": "grafana_url",
+			"value": "http://thecloudroot.com:3000",
+			"type": "string"
+		},
+		{
+			"id": "ae75285c-4e38-4c76-a361-a4b11a8ece9c",
+			"key": "Id",
+			"value": "13",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
